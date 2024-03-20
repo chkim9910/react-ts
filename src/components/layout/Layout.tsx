@@ -12,4 +12,10 @@ const Layout: React.FC = () => (
     </div>
 )
 
+export const LayoutNone: React.FC = () => (
+    <div>
+        <Outlet />
+    </div>
+)
+
 export default Layout

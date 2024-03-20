@@ -7,7 +7,8 @@ type HeaderProps = {
 const Header: React.FC<HeaderProps> = ({ name }) => {
     return (
         <header>
-            <h1>{name}</h1>
+            <h1 className="text-3xl font-bold text-blue-600">{name}</h1>
+            <p className="text-lg font-medium">Hello, Typescript!</p>
             <nav>
                 <ul>
                     <li>
@@ -15,6 +16,9 @@ const Header: React.FC<HeaderProps> = ({ name }) => {
                     </li>
                     <li>
                         <a href="/about">about</a>
+                    </li>
+                    <li>
+                        <a href="/signin">signin</a>
                     </li>
                 </ul>
             </nav>
