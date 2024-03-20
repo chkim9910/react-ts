@@ -1,3 +1,5 @@
+// import { css } from '@emotion/react'
+
 // Props 타입 정의
 type HeaderProps = {
     name: string
@@ -7,7 +9,8 @@ type HeaderProps = {
 const Header: React.FC<HeaderProps> = ({ name }) => {
     return (
         <header>
-            <h1 className="text-3xl font-bold text-blue-600">{name}</h1>
+            <h1 className="text-3xl font-light">{name}</h1>
+            {/* <h1 tw>{name}</h1> */}
             <p className="text-lg font-medium">Hello, Typescript!</p>
             <nav>
                 <ul>
